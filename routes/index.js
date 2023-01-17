@@ -6,8 +6,8 @@ router.post('/webhooks', async function (req, res, next) {
 
   // Parse the request body from the POST
   let body = req.body;
-  console.log(process.env.PORT);
 
+  console.log(process.env.PORT);
   // Check the Incoming webhook message
   console.log(JSON.stringify(req.body, null, 2));
 
@@ -41,6 +41,9 @@ router.post('/webhooks', async function (req, res, next) {
     }
     res.sendStatus(200);
   } else {
+    console.log(process.env.PORT);
+    console.log(process.env.VERIFY_TOKEN);
+    console.log(process.env.WHATSAPP_TOKEN);
     // Return a '404 Not Found' if event is not from a WhatsApp API
     res.sendStatus(404);
   }
