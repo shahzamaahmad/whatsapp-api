@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 axios = require("axios").default;
 /* GET home page. */
-router.post('/webhooks', async function (req, res, next) {
+router.post('/webhook', async function (req, res, next) {
 
   // Parse the request body from the POST
   let body = req.body;
