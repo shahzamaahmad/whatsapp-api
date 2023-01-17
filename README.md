@@ -1,6 +1,6 @@
 # Project Title
 
-A nice project with a nice description
+WhatsApp API Webhook
 
 ---
 
@@ -37,34 +37,24 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
     $ npm install npm -g
 
-###
-
-### Yarn installation
-
-After installing node, this project will need yarn too, so just run the following command.
-
-      $ npm install -g yarn
-
----
-
 ## Install
 
-    $ git clone https://github.com/YOUR_USERNAME/PROJECT_TITLE
-    $ cd PROJECT_TITLE
-    $ yarn install
+    $ git clone https://github.com/shahzamaahmad/whatsapp-api
+    $ cd whatsapp-api
+    $ npm install
 
 ## Configure app
 
-Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
+Create `.env` then edit it with your settings. You will need:
 
-- A setting;
-- Another setting;
-- One more setting;
+- VERIFY_TOKEN=TOKEN_NAME,
+- WHATSAPP_TOKEN=your_whatsapp_token,
+- PORT=1337,
 
 ## Running the project
 
-    $ yarn start
+    $ DEBUG=whatsapp-api:* npm start
 
 ## Simple build for production
 
-    $ yarn build
+    $ npm start
