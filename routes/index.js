@@ -6,8 +6,9 @@ router.post('/webhook', async function (req, res, next) {
 
   // Parse the request body from the POST
   let body = req.body;
+  const token = process.env.WHATSAPP_TOKEN;
 
-  console.log(process.env.PORT);
+  console.log(token);
   // Check the Incoming webhook message
   console.log(JSON.stringify(req.body, null, 2));
 
